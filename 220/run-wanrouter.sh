@@ -1,6 +1,6 @@
 #! /bin/sh
 
-docker run --name portico-wanrouter --hostname=portico-wanrouter --network=portico \
+docker run --name portico-wanrouter --hostname=portico-wanrouter \
 -v /etc/localtime:/etc/localtime:ro \
 -v /srv/portico220:/home \
 -p 52295:52295 \
