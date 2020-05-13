@@ -22,10 +22,10 @@ mv /home/portico/dist/portico-2.2.0-linux64.tar.gz /opt/portico-2.2.0/
 	
 WORKDIR /opt/portico-2.2.0
 
-# EXPORT 52295
-
 COPY ./RTI.rid /opt/portico-2.2.0/RTI.rid
 
 RUN rm -rf /home/portico
+
+ENTRYPOINT ["/bin/bash"]
 
 
